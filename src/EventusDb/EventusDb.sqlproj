@@ -60,6 +60,8 @@
     <Folder Include="dbo\StoredProcedures" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Views" />
+    <Folder Include="Scripts" />
+    <Folder Include="PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Event.sql" />
@@ -71,5 +73,25 @@
     <Build Include="dbo\Tables\UserCity.sql" />
     <Build Include="dbo\Tables\City.sql" />
     <Build Include="dbo\StoredProcedures\spEvent_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\spEvent_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\spEvent_GetAllCreatedByUserId.sql" />
+    <Build Include="dbo\StoredProcedures\spInvitation_GetAllSentToUserId.sql" />
+    <Build Include="dbo\StoredProcedures\spInvitation_GetAllSentByUserId.sql" />
+    <Build Include="dbo\StoredProcedures\spRequest_GetRequestsForEventId.sql" />
+    <Build Include="dbo\StoredProcedures\spRequest_GetRequestsSentByUserId.sql" />
+    <Build Include="dbo\StoredProcedures\spEvent_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spInvitation_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spRequest_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spCity_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spUserCity_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spPlace_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spEventUser_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\spComment_Insert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="EventusDb.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfiles\EventusDb.publish.xml" />
   </ItemGroup>
 </Project>
